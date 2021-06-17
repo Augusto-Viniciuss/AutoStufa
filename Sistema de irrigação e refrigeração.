@@ -1,0 +1,150 @@
+//Biblioteca usada para programar o LCD
+#include <LiquidCrystal.h>
+
+//Pinos da Tela LCD 16x2
+LiquidCrystal lcd(12, 11, A0, A1, A2, A3);
+
+//Pino sensor de umidade
+#define sensor_umidade A5
+
+//Pino sensor de temperatura
+#define sensor_temperatura A4
+
+//Pinos LED RGB iluminação da estufa
+#define vermelho2 2
+#define azul2 1
+
+//Pinos LED RGB de indicação de umidade
+#define vermelho 7
+#define azul 8
+#define verde 9
+
+//Pino bomba D'água 
+#define valvula 13
+
+//Pino do exaustor
+#define exaustor 10
+
+void setup() {
+  	
+    //Instruções de Setup do lcd
+    lcd.begin(16, 2);
+    
+    //Instruções de apresentação inicial no lcd
+    lcd.setCursor(0, 0);
+    lcd.print("Iniciando...");
+    delay (2000);
+    lcd.clear();
+    lcd.setCursor(2, 0);
+    lcd.print("Tudo pronto.");
+    delay (1000);
+    lcd.clear();
+   
+  	//Definir pinos de saída
+    pinMode(vermelho, OUTPUT);
+  	pinMode(azul, OUTPUT);
+  	pinMode(verde, OUTPUT);
+  	pinMode(valvula, OUTPUT);
+    pinMode(exaustor, OUTPUT);
+    
+    //Fecha a válvula
+    digitalWrite(valvula, HIGH);
+  
+}
+
+void loop() {
+    
+  	//Ler do sinal do sensor.
+  	float sinal_umd = analogRead(sensor_umidade);
+    float sinal_temp = analogRead(sensor_temperatura);  
+  
+    
+    //Limpa a memoria do LCD.
+    lcd.clear();
+  
+
+    //Chamada das funções.
+    monitorar_umd(sinal_umd);
+    monitorar_temp(sinal_temp);
+    
+  
+  delay(1000);
+}
+
+//Função para a verificação de umidade no solo.
+void monitorar_umd(float sinal) {
+  	
+  	//Transformar o valor analógico recebido em porcentagem.
+  	int umidade = map(sinal, 0, 1023, 0, 100);
+ 
+  
+  	if(umidade > 60) {
+    	
+      	//VERDE - Umidade registrada maior que 60%. 
+    	digitalWrite(vermelho,LOW);
+    	digitalWrite(azul, LOW);
+    	digitalWrite(verde, HIGH);
+    
+      	//Desligar sistema de irrigação.
+  		digitalWrite(valvula, HIGH);
+      
+    }else if(umidade > 40 && umidade < 60){
+      
+        //AMARELO - Umidade registrada entre 40% e 60%.
+        digitalWrite(vermelho, HIGH);
+    	digitalWrite(azul, LOW);
+    	digitalWrite(verde, HIGH);
+  
+        //Manter sistema de irrigação desligado
+        digitalWrite(valvula, HIGH);    
+    
+  	}else {
+    
+        //VERMELHO - Umidade registrada menor ou igual a 40%.
+    	digitalWrite(vermelho, HIGH);
+      	digitalWrite(azul, LOW);
+      	digitalWrite(verde, LOW);
+    	
+      	//Acionar sistema de irrigação.
+      	digitalWrite(valvula, LOW);
+      
+  	}
+  
+      //Instruções do LCD.
+      lcd.setCursor(1, 0);
+      lcd.print("UMID");
+      lcd.setCursor(2, 1);
+      lcd.print(umidade);
+      
+}
+
+//Função para a verificação da temperatura.
+void monitorar_temp(float sinal2) {
+  
+      //Conversão dos valores do sensor em graus celsius.
+      float temperatura = sinal2 / 1024;
+      float temperaturaC = temperatura * 5;
+      float temperaturaCC = temperaturaC - 0.5;
+      int temperaturaCelsius = temperaturaCC * 100;
+  
+      //Instruções do LCD.
+      lcd.setCursor(11, 0);
+      lcd.print("TEMP");
+      lcd.setCursor(12, 1);
+      lcd.print(temperaturaCelsius);
+      
+      
+      
+      if(temperaturaCelsius > 16) {
+
+        //Acionar o sistema de ventilação.
+        digitalWrite(exaustor, HIGH);
+
+      }else {
+
+        //Desligar o sistema de ventilação.
+        digitalWrite(exaustor, LOW);
+
+      }
+    
+}
