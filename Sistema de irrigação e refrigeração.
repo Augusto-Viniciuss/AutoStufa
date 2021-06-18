@@ -64,8 +64,7 @@ void loop() {
     //Chamada das funções.
     monitorar_umd(sinal_umd);
     monitorar_temp(sinal_temp);
-    
-  
+      
   delay(1000);
 }
 
@@ -129,9 +128,7 @@ void monitorar_temp(float sinal2) {
       lcd.print("TEMP");
       lcd.setCursor(12, 1);
       lcd.print(temperaturaCelsius);
-      
-      
-      
+        
       if(temperaturaCelsius > 16) {
 
         //Acionar o sistema de ventilação.
