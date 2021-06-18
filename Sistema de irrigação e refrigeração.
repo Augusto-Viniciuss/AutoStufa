@@ -61,7 +61,7 @@ void loop() {
     monitorar_umd(sinal_umd);
     monitorar_temp(sinal_temp);
       
-  delay(1000);
+  delay(60000);
 }
 
 //Função para a verificação de umidade no solo.
