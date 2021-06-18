@@ -9,8 +9,7 @@
 #define vermelho 3
 #define verde 4
 
-void setup()
-{
+void setup(){
  
   //Definição dos pinos
   pinMode(muda_cor, INPUT);
@@ -23,7 +22,7 @@ void setup()
 
 void loop() {
  
-  //Ler os valores do potenciometro
+  //Ler os valores do potenciometro e do sensor
   float valorP = analogRead(muda_cor);
   float luz = analogRead(sensor);
   
@@ -39,8 +38,7 @@ void loop() {
     digitalWrite(azul, LOW);
     digitalWrite(verde, LOW);
     
-  }
-  
+  }  
 }
 
 void muda_cores(float valor) {
@@ -74,5 +72,4 @@ void muda_cores(float valor) {
     digitalWrite(verde, LOW);
     
   }
-  
 }
