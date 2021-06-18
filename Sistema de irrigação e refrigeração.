@@ -37,6 +37,8 @@ void setup() {
     lcd.clear();
    
     //Definir pinos
+    pinMode(sensor_umidade, INPUT);
+    pinMode(sensor_temperatura, INPUT);
     pinMode(vermelho, OUTPUT);
     pinMode(azul, OUTPUT);
     pinMode(verde, OUTPUT);
@@ -57,7 +59,7 @@ void loop() {
     //Limpa a memoria do LCD.
     lcd.clear();
   
-    //Chamada das funções.
+    //Chamada dos voids.
     monitorar_umd(sinal_umd);
     monitorar_temp(sinal_temp);
       
