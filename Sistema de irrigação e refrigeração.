@@ -54,8 +54,8 @@ void setup() {
 
 void loop() {
     
-  	//Ler do sinal do sensor.
-  	float sinal_umd = analogRead(sensor_umidade);
+    //Ler do sinal do sensor.
+    float sinal_umd = analogRead(sensor_umidade);
     float sinal_temp = analogRead(sensor_temperatura);  
   
     
@@ -74,13 +74,13 @@ void loop() {
 //Função para a verificação de umidade no solo.
 void monitorar_umd(float sinal) {
   	
-  	//Transformar o valor analógico recebido em porcentagem.
-  	int umidade = map(sinal, 0, 1023, 0, 100);
+    //Transformar o valor analógico recebido em porcentagem.
+    int umidade = map(sinal, 0, 1023, 0, 100);
  
   
   	if(umidade > 60) {
     	
-      	//VERDE - Umidade registrada maior que 60%. 
+      //VERDE - Umidade registrada maior que 60%. 
     	digitalWrite(vermelho,LOW);
     	digitalWrite(azul, LOW);
     	digitalWrite(verde, HIGH);
@@ -90,32 +90,32 @@ void monitorar_umd(float sinal) {
       
     }else if(umidade > 40 && umidade < 60){
       
-        //AMARELO - Umidade registrada entre 40% e 60%.
-        digitalWrite(vermelho, HIGH);
+      //AMARELO - Umidade registrada entre 40% e 60%.
+      digitalWrite(vermelho, HIGH);
     	digitalWrite(azul, LOW);
     	digitalWrite(verde, HIGH);
   
-        //Manter sistema de irrigação desligado
-        digitalWrite(valvula, HIGH);    
+      //Manter sistema de irrigação desligado
+      digitalWrite(valvula, HIGH);    
     
   	}else {
     
-        //VERMELHO - Umidade registrada menor ou igual a 40%.
+      //VERMELHO - Umidade registrada menor ou igual a 40%.
     	digitalWrite(vermelho, HIGH);
-      	digitalWrite(azul, LOW);
-      	digitalWrite(verde, LOW);
+      digitalWrite(azul, LOW);
+      digitalWrite(verde, LOW);
     	
       	//Acionar sistema de irrigação.
       	digitalWrite(valvula, LOW);
       
   	}
   
-      //Instruções do LCD.
-      lcd.setCursor(1, 0);
-      lcd.print("UMID");
-      lcd.setCursor(2, 1);
-      lcd.print(umidade);
-      
+     //Instruções do LCD.
+     lcd.setCursor(1, 0);
+     lcd.print("UMID");
+     lcd.setCursor(2, 1);
+     lcd.print(umidade);
+
 }
 
 //Função para a verificação da temperatura.
