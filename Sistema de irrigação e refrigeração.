@@ -10,16 +10,12 @@ LiquidCrystal lcd(12, 11, A0, A1, A2, A3);
 //Pino sensor de temperatura
 #define sensor_temperatura A4
 
-//Pinos LED RGB iluminação da estufa
-#define vermelho2 2
-#define azul2 1
-
 //Pinos LED RGB de indicação de umidade
 #define vermelho 7
 #define azul 8
 #define verde 9
 
-//Pino bomba D'água 
+//Pino válvula solenoide
 #define valvula 13
 
 //Pino do exaustor
