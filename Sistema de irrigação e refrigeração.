@@ -77,8 +77,7 @@ void monitorar_umd(float sinal) {
     //Transformar o valor analógico recebido em porcentagem.
     int umidade = map(sinal, 0, 1023, 0, 100);
  
-  
-  	if(umidade > 60) {
+    if(umidade > 60) {
     	
       //VERDE - Umidade registrada maior que 60%. 
     	digitalWrite(vermelho,LOW);
@@ -105,8 +104,8 @@ void monitorar_umd(float sinal) {
       digitalWrite(azul, LOW);
       digitalWrite(verde, LOW);
     	
-      	//Acionar sistema de irrigação.
-      	digitalWrite(valvula, LOW);
+      //Acionar sistema de irrigação.
+      digitalWrite(valvula, LOW);
       
   	}
   
