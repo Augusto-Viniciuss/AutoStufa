@@ -106,11 +106,11 @@ void monitorar_umd(float sinal) {
       
   	}
   
-     //Instruções do LCD.
-     lcd.setCursor(1, 0);
-     lcd.print("UMID");
-     lcd.setCursor(2, 1);
-     lcd.print(umidade);
+   //Instruções do LCD.
+   lcd.setCursor(1, 0);
+   lcd.print("UMID");
+   lcd.setCursor(2, 1);
+   lcd.print(umidade);
 
 }
 
