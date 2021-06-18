@@ -40,7 +40,7 @@ void setup() {
     delay (1000);
     lcd.clear();
    
-  	//Definir pinos de saída
+    //Definir pinos de saída
     pinMode(vermelho, OUTPUT);
     pinMode(azul, OUTPUT);
     pinMode(verde, OUTPUT);
@@ -85,8 +85,8 @@ void monitorar_umd(float sinal) {
     	digitalWrite(azul, LOW);
     	digitalWrite(verde, HIGH);
     
-      	//Desligar sistema de irrigação.
-  		digitalWrite(valvula, HIGH);
+      //Desligar sistema de irrigação.
+      digitalWrite(valvula, HIGH);
       
     }else if(umidade > 40 && umidade < 60){
       
