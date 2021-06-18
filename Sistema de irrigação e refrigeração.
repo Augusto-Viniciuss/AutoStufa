@@ -57,12 +57,10 @@ void loop() {
     //Ler do sinal do sensor.
     float sinal_umd = analogRead(sensor_umidade);
     float sinal_temp = analogRead(sensor_temperatura);  
-  
-    
+      
     //Limpa a memoria do LCD.
     lcd.clear();
   
-
     //Chamada das funções.
     monitorar_umd(sinal_umd);
     monitorar_temp(sinal_temp);
@@ -80,9 +78,9 @@ void monitorar_umd(float sinal) {
     if(umidade > 60) {
     	
       //VERDE - Umidade registrada maior que 60%. 
-    	digitalWrite(vermelho,LOW);
-    	digitalWrite(azul, LOW);
-    	digitalWrite(verde, HIGH);
+      digitalWrite(vermelho,LOW);
+      digitalWrite(azul, LOW);
+      digitalWrite(verde, HIGH);
     
       //Desligar sistema de irrigação.
       digitalWrite(valvula, HIGH);
@@ -97,7 +95,7 @@ void monitorar_umd(float sinal) {
       //Manter sistema de irrigação desligado
       digitalWrite(valvula, HIGH);    
     
-  	}else {
+    }else {
     
       //VERMELHO - Umidade registrada menor ou igual a 40%.
     	digitalWrite(vermelho, HIGH);
