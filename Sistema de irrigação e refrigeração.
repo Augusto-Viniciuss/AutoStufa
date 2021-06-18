@@ -146,5 +146,4 @@ void monitorar_temp(float sinal2) {
         digitalWrite(exaustor, LOW);
 
       }
-    
 }
