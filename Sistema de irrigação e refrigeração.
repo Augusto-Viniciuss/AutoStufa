@@ -42,9 +42,9 @@ void setup() {
    
   	//Definir pinos de saída
     pinMode(vermelho, OUTPUT);
-  	pinMode(azul, OUTPUT);
-  	pinMode(verde, OUTPUT);
-  	pinMode(valvula, OUTPUT);
+    pinMode(azul, OUTPUT);
+    pinMode(verde, OUTPUT);
+    pinMode(valvula, OUTPUT);
     pinMode(exaustor, OUTPUT);
     
     //Fecha a válvula
