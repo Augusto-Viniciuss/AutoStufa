@@ -9,7 +9,7 @@
 #define vermelho 3
 #define verde 4
 
-void setup(){
+void setup() {
  
   //Definição dos pinos
   pinMode(muda_cor, INPUT);
@@ -38,38 +38,40 @@ void loop() {
     digitalWrite(azul, LOW);
     digitalWrite(verde, LOW);
     
-  }  
+  } 
+  
 }
 
 void muda_cores(float valor) {
   
   //Mapear os valores do potenciometro de 0 a 100
   int cores = map(valor, 0, 1024, 0, 100);
-
-  //Definir cor amarela
+ 
   if(cores > 33 && cores < 66) {
     
+    //Definir cor amarela
     digitalWrite(verde, HIGH);
     digitalWrite(vermelho, HIGH);
     digitalWrite(azul, LOW);
     
    }
-  
-  //Definir cor azul
+   
   else if(cores > 33) {
     
+    //Definir cor azul
     digitalWrite(azul, HIGH);
     digitalWrite(vermelho, LOW);
     digitalWrite(verde, LOW);
     
   }
-  
-  //Definir cor vermelha
+    
   else {
     
+    //Definir cor vermelha
     digitalWrite(vermelho, HIGH);
     digitalWrite(azul, LOW);
     digitalWrite(verde, LOW);
     
   }
+  
 }
