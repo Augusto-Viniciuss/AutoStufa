@@ -98,7 +98,7 @@ void monitorar_umd(float sinal) {
     }else {
     
       //VERMELHO - Umidade registrada menor ou igual a 40%.
-    	digitalWrite(vermelho, HIGH);
+      digitalWrite(vermelho, HIGH);
       digitalWrite(azul, LOW);
       digitalWrite(verde, LOW);
     	
