@@ -36,7 +36,7 @@ void setup() {
     delay (1000);
     lcd.clear();
    
-    //Definir pinos de saída
+    //Definir pinos
     pinMode(vermelho, OUTPUT);
     pinMode(azul, OUTPUT);
     pinMode(verde, OUTPUT);
