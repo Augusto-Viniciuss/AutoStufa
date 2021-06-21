@@ -32,3 +32,7 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 |01     |Relé 5V                            |
 |01	|Válvula solenoide                           |
 |02	|Coolers FAN                           |
+
+# Simulação
+
+A simulação é via [Tinkercad](https://www.tinkercad.com/things/6Vrjlavkf2A/viewel).
