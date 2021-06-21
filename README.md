@@ -37,6 +37,6 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 
 A simulação é via Tinkercard.
 
-Primeiro temos a simulação do [Sistema de irrigação e refrigeração.](
+Primeiro temos a simulação do [Sistema de irrigação e refrigeração.](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
 
-<src= "https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1" />
+
