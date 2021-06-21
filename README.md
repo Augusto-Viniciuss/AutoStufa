@@ -9,7 +9,7 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 
 # Hardware
 
-|Qnt	|Name                                            |
+|Qnt	|Name                                            |      
 |-------|------------------------------------------------|	
 |01	|Arduino Uno                            |
 |01	|Arduino nano                            |
