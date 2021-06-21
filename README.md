@@ -39,4 +39,4 @@ A simulação é via Tinkercard.
 
 Primeiro temos a simulação do [Sistema de irrigação e refrigeração.](
 
-<src="https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1"/>
+<src= "https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1" />
