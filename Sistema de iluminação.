@@ -56,7 +56,7 @@ void muda_cores(float valor) {
     
    }
    
-  else if(cores > 33) {
+  else if(cores > 66) {
     
     //Definir cor azul
     digitalWrite(azul, HIGH);
