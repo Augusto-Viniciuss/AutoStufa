@@ -1,9 +1,16 @@
 # AutoStufa
 A autostufa é um projeto de estufa portátil e inteligente que visa sanar diversos problemas de uma estufa convencional, porém, vale lembrar que a autostufa é um objeto pequeno, portanto o cultivo da mesma se limita à plantas de pequeno porte.
 
+# Modelo
 <img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Copy%20of%20Projeto%20IEC%20-%20Auto%20Estufa%20(3).png?raw=true"/>
 
 A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a refrigeração, irrigação e a iluminação. Fatores essenciais para o crescimento de uma planta, de forma que seja inteligente evitando ao máximo desperdícios.
+
+Conta também com um sistema de iluminação baseado em espectros de cores que aumentam a eficacia de desenvolvimento de planta.
+
+# Usando
+
+As unicas funções opcionais de utilização manual é a mudança de cores na iluminação através do potenciômetro, e ligar a irrigação manualmente pelo interruptor deslizante para irrigar ainda mais caso queira.
 
 <img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Copy%20of%20Projeto%20IEC%20-%20Auto%20Estufa%20(2).png?raw=true"/>
 
@@ -14,7 +21,7 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 |01	|Arduino Uno                            |
 |01	|Arduino nano                            |
 |01 	|Interruptor deslizante                      |
-|01 	|Potenciometro                                     |
+|01 	|Potenciômetro                                     |
 |01	|1 metro de fita de led rgb                            |
 |01	|Led rgb                            |
 |08	|1kΩ Resistor                                    |
