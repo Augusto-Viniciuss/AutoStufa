@@ -24,7 +24,7 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 |01 	|Potenciômetro                                     |
 |01	|1 metro de fita de led rgb                            |
 |01	|Led rgb                            |
-|08	|1kΩ Resistor                                    |
+|01	|1kΩ Resistor                                    |
 |06	|130Ω Resistor                                   |
 |01	|250kΩ Resistor                           |
 |01	|220Ω Resistor                           |
