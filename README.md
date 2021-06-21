@@ -39,6 +39,6 @@ A simulação é via Tinkercard.
 
 Primeiro temos a simulação do [Sistema de irrigação e refrigeração.](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
 
-<img src= "
+<img src= "https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/GIT%20irriga%20e%20refrige.png?raw=true"/>
 
 
