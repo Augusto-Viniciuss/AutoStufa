@@ -18,7 +18,7 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 |01	|1 metro de fita de led rgb                            |
 |01	|Led rgb                            |
 |08	|1kΩ Resistor                                    |
-|03	|130Ω Resistor                                   |
+|06	|130Ω Resistor                                   |
 |01	|250kΩ Resistor                           |
 |01	|220Ω Resistor                           |
 |01	|LCD 16x2                           |
