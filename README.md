@@ -37,6 +37,8 @@ A nossa estufa tem a proposta de ser autossuficiente, portanto ela administra a 
 
 A simulação é via Tinkercard.
 
+Infelizmente no simulador tinkercard algumas das peças do hardware não são disponiveis, por isso simulamos as peças que não estavam lá, na simulação acompanha etiquetas com os nomes das respectivas peças que estão sendo simuladas.
+
 Simulação do [Sistema de irrigação e refrigeração.](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
 
 [<img src= "https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Sistema%20da%20Autostufa.%20(4).png?raw=true"/>](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
@@ -45,6 +47,6 @@ Simulação do [Sistema de iluminação](https://www.tinkercad.com/embed/ksg0cst
 
 [<img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Sistema%20de%20ilumina%C3%A7%C3%A3o%20Autostufa.%20(2).png?raw=true"/>](https://www.tinkercad.com/embed/ksg0cst6G36?editbtn=1)
 
-Infelizmente no simulador tinkercard algumas das peças do hardware não são disponiveis, por isso simulamos as peças que não estavam lá, na simulação acompanha etiquetas com os nomes das respectivas peças que estão sendo simuladas.
+
 
 
