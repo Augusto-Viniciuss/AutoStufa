@@ -10,7 +10,7 @@ Conta também com um sistema de iluminação baseado em espectros de cores que a
 
 # Usando
 
-As unicas funções opcionais de utilização manual é a mudança de cores na iluminação através do potenciômetro, e ligar a irrigação manualmente pelo interruptor deslizante para irrigar mais caso queira.
+As unicas funções opcionais de utilização manual é a mudança de cores na iluminação através do potenciômetro, e ligar a irrigação manualmente pelo interruptor deslizante para irrigar mais, caso queira.
 
 <img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Copy%20of%20Projeto%20IEC%20-%20Auto%20Estufa%20(2).png?raw=true"/>
 
@@ -53,7 +53,3 @@ Simulação do [Sistema de irrigação e refrigeração.](https://www.tinkercad.
 Simulação do [Sistema de iluminação](https://www.tinkercad.com/embed/ksg0cst6G36?editbtn=1)
 
 [<img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Sistema%20de%20ilumina%C3%A7%C3%A3o%20Autostufa.%20(2).png?raw=true"/>](https://www.tinkercad.com/embed/ksg0cst6G36?editbtn=1)
-
-
-
-
