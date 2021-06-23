@@ -35,8 +35,7 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 |01	|Fonte de 9V                                     |
 |01	|Fonte de 5V  |
 |01 	|Fonte de 12V                                      |
-|01     |Modulo irf520n                                   |
-|01     |Relé 5V                            |
+|02     |Relé 5V                            |
 |01	|Válvula solenoide                           |
 |02	|Coolers FAN                           |
 
