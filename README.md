@@ -43,7 +43,7 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 
 Sistema de irrigação e refrigeração.
 
-<img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Esquem%C3%A1tico%20do%20arduino%20uno.jpeg?raw=true"/>
+<img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Esquem%C3%A1tico%20do%20arduino%20unO.jpeg?raw=true"/>
 
 Sistema de iluminação.
 
