@@ -14,7 +14,7 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 
 <img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Copy%20of%20Projeto%20IEC%20-%20Auto%20Estufa%20(2).png?raw=true"/>
 
-# Hardware
+# Componentes do hardware
 
 |Qnt	|Name                                            |      
 |-------|------------------------------------------------|	
@@ -38,6 +38,12 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 |02     |Relé 5V                            |
 |01	|Válvula solenoide                           |
 |02	|Coolers FAN                           |
+
+# Esquemática do hardware
+
+Sistema de irrigação e refrigeração
+
+<img src="
 
 # Simulação
 
