@@ -57,7 +57,7 @@ Infelizmente no simulador tinkercard algumas das peças do hardware não são di
 
 Simulação do [Sistema de irrigação e refrigeração.](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
 
-[<img src= "https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Sistema%20da%20Autostufa.%20(4).png?raw=true"/>](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
+[<img src= "https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Sistema%20da%20Autostufa.%20(5).png?raw=true"/>](https://www.tinkercad.com/embed/24ZMURTbk8Z?editbtn=1)
 
 Simulação do [Sistema de iluminação](https://www.tinkercad.com/embed/ksg0cst6G36?editbtn=1)
 
