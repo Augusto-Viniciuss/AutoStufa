@@ -47,7 +47,7 @@ Sistema de irrigação e refrigeração.
 
 Sistema de iluminação.
 
-<img src="
+<img src="https://github.com/Augusto-Viniciuss/AutoStufa/blob/main/Imgs/Esquem%C3%A1tico%20do%20arduino%20nano.jpeg?raw=true"/>
 
 # Simulação
 
