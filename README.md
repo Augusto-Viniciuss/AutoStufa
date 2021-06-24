@@ -16,7 +16,7 @@ As unicas funções opcionais de utilização manual é a mudança de cores na i
 
 # Componentes do hardware
 
-|Qnt	|Name                                            |      
+|Qnt	|Nome                                           |      
 |-------|------------------------------------------------|	
 |01	|Arduino Uno                            |
 |01	|Arduino nano                            |
