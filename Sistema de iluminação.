@@ -47,7 +47,7 @@ void muda_cores(float valor) {
   //Mapear os valores do potenciometro de 0 a 100
   int cores = map(valor, 0, 1024, 0, 100);
  
-  if(cores > 33 && cores < 66) {
+  if(cores > 33 && cores <= 66) {
     
     //Definir cor amarela
     digitalWrite(verde, HIGH);
