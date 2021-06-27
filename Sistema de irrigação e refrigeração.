@@ -82,7 +82,7 @@ void monitorar_umd(float sinal) {
       //Desligar sistema de irrigação
       digitalWrite(valvula, HIGH);
       
-    }else if(umidade > 40 && umidade < 60){
+    }else if(umidade > 40 && umidade <= 60){
       
       //AMARELO - Umidade registrada entre 40% e 60%
       digitalWrite(vermelho, HIGH);
