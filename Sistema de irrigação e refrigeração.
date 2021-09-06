@@ -63,7 +63,7 @@ void loop() {
     monitorar_umd(sinal_umd);
     monitorar_temp(sinal_temp);
       
-  delay(60000);
+  delay(600000);
 }
 
 //Função para a verificação de umidade no solo
@@ -119,9 +119,9 @@ void monitorar_temp(float temp) {
       float temperatura = temp / 1024;
       temperatura = temperatura * 5;
       temperatura = temperatura - 0.5;
-      temperatura = temperatura * 100;
+      int temperaturaCelsius = temperatura * 100;
 
-      if(temperatura > 16) {
+      if(temperaturaCelsius > 16) {
         
         //Acionar o sistema de ventilação
         digitalWrite(exaustor, HIGH);
@@ -137,6 +137,6 @@ void monitorar_temp(float temp) {
       lcd.setCursor(11, 0);
       lcd.print("TEMP");
       lcd.setCursor(12, 1);
-      lcd.print(temperatura);
+      lcd.print(temperaturaCelsius);
       
 }
