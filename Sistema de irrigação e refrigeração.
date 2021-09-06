@@ -67,34 +67,34 @@ void loop() {
 }
 
 //Função para a verificação de umidade no solo
-void monitorar_umd(float sinal) {
+void monitorar_umd(float umd) {
   	
     //Transformar o valor analógico recebido em porcentagem
-    int umidade = map(sinal, 0, 1023, 0, 100);
+    int umidade = map(umd, 0, 1023, 0, 100);
  
-    if(umidade > 60) {
+    if (umidade > 60) {
     	
-      //VERDE - Umidade registrada maior que 60%
+      //Verde - Umidade registrada maior que 60%
       digitalWrite(vermelho,LOW);
       digitalWrite(azul, LOW);
       digitalWrite(verde, HIGH);
     
       //Desligar sistema de irrigação
       digitalWrite(valvula, HIGH);
+ 
+    } else if (umidade > 40 && umidade <= 60) {
       
-    }else if(umidade > 40 && umidade <= 60){
-      
-      //AMARELO - Umidade registrada entre 40% e 60%
+      //Amarelo - Umidade registrada entre 40% e 60%
       digitalWrite(vermelho, HIGH);
       digitalWrite(azul, LOW);
       digitalWrite(verde, HIGH);
   
       //Manter sistema de irrigação desligado
-      digitalWrite(valvula, HIGH);    
-    
-    }else {
-    
-      //VERMELHO - Umidade registrada menor ou igual a 40%
+      digitalWrite(valvula, HIGH); 
+      
+    } else {
+      
+      //Vermelho - Umidade registrada menor ou igual a 40%
       digitalWrite(vermelho, HIGH);
       digitalWrite(azul, LOW);
       digitalWrite(verde, LOW);
@@ -113,29 +113,30 @@ void monitorar_umd(float sinal) {
 }
 
 //Função para a verificação da temperatura
-void monitorar_temp(float sinal2) {
+void monitorar_temp(float temp) {
   
       //Conversão dos valores do sensor em graus celsius
-      float temperatura = sinal2 / 1024;
-      float temperaturaC = temperatura * 5;
-      float temperaturaCC = temperaturaC - 0.5;
-      int temperaturaCelsius = temperaturaCC * 100;
-  
+      float temperatura = temp / 1024;
+      temperatura = temperatura * 5;
+      temperatura = temperatura - 0.5;
+      temperatura = temperatura * 100;
+
+      if(temperatura > 16) {
+        
+        //Acionar o sistema de ventilação
+        digitalWrite(exaustor, HIGH);
+        
+      }else {
+        
+        //Desligar o sistema de ventilação
+        digitalWrite(exaustor, LOW);
+        
+      }
+      
       //Instruções do LCD
       lcd.setCursor(11, 0);
       lcd.print("TEMP");
       lcd.setCursor(12, 1);
-      lcd.print(temperaturaCelsius);
-        
-      if(temperaturaCelsius > 16) {
-
-        //Acionar o sistema de ventilação
-        digitalWrite(exaustor, HIGH);
-
-      }else {
-
-        //Desligar o sistema de ventilação
-        digitalWrite(exaustor, LOW);
-
-      }
+      lcd.print(temperatura);
+      
 }
