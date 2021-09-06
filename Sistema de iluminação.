@@ -23,13 +23,13 @@ void setup() {
 void loop() {
  
   //Ler os valores do potenciometro e do sensor
-  float valorP = analogRead(muda_cor);
+  float escolheCor = analogRead(muda_cor);
   float luz = analogRead(sensor);
   
   if (luz > 800) {   
     
     //Chama o void para decidir qual cor acenderá
-    muda_cores(valorP);
+    muda_cores(escolheCor);
     
   } else {
     
@@ -46,7 +46,7 @@ void muda_cores(float valor) {
   //Mapear os valores do potenciometro de 0 a 100
   int cores = map(valor, 0, 1024, 0, 100);
  
-  if (cores > 33 && cores <= 66) {
+  if ((cores > 33) && (cores <= 66)) {
     
     //Definir cor amarela
     digitalWrite(verde, HIGH);
